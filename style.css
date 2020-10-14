@@ -88,6 +88,15 @@ footer {
   border-top: 2px solid #ccc;
 }
 
-#map {
+iframe {
+  display: block;
+  width: 100%;
   height: 40vh;
+  margin: 0;
+}
+
+i.fas,
+i.fa,
+i.far {
+  color: teal;
 }

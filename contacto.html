@@ -14,14 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjQCahLWo9oBH1R-KqqAFbLXo0KBvXtC8&callback=initMap"
-    ></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./index.js"></script>
     <title>Duomo Amoblamientos</title>
   </head>
   <body>
@@ -74,17 +67,23 @@
       </div>
       <div class="container bg-light p-4">
         <div class="row align-items-center">
-          <div class="col-md-6">
-            <h3 class="my-4">
-              <i class="fas fa-map-marker-alt"></i> Calle ####
-            </h3>
-            <h3 class="my-4"><i class="fas fa-phone"></i> 0342-#########</h3>
-            <h3 class="my-4">
-              <i class="far fa-clock"></i> Lun-Sab: 06:30am-8:30pm
-            </h3>
+          <div class="col-md-6 align-self-stretch order-sm-2 py-sm-3">
+            <h2>Nos podes encontrar en:</h2>
+            <hr />
+            <div class="container d-flex flex-column justify-content-center">
+              <h3 class="my-4">
+                <i class="fas fa-map-marker-alt"></i> Calle ####
+              </h3>
+              <h3 class="my-4"><i class="fas fa-phone"></i> 0342-#########</h3>
+              <h3 class="my-4">
+                <i class="far fa-clock"></i> Lun-Sab: 06:30am-8:30pm
+              </h3>
+            </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 order-sm-1 py-sm-3">
+            <h2>Escribinos</h2>
+            <hr />
             <form>
               <div class="form-group">
                 <div class="form-group">
@@ -129,13 +128,23 @@
       </div>
     </section>
     <!-- GOOGLE MAP -->
-    <div id="map"></div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54358.47711048382!2d-60.7399909087864!3d-31.622764692456823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe%2C%20Santa%20Fe%20Province!5e0!3m2!1sen!2sar!4v1602670331403!5m2!1sen!2sar"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+    <!-- <div id="map"></div> -->
     <!--FOOTER-->
     <footer class="bg-dark">
       <div class="container-fluid p-2">
         <div class="row align-items-center justify-content-around no-gutters">
           <div class="col-md-3">
-            <ul class="nav flex-column align-items-center">
+            <ul
+              class="nav flex-md-column align-items-center justify-content-center"
+            >
               <li class="nav-item">
                 <a class="nav-link text-white" href="./productos.html"
                   >Productos</a
@@ -153,7 +162,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img
               src="./img/logo4.png"
               alt="duomo logo"
@@ -162,9 +171,11 @@
             />
           </div>
           <div class="col-md-3">
-            <ul class="nav flex-column">
+            <ul class="nav flex-md-column justify-content-center">
               <li class="nav-item">
-                <a href="#" class="nav-link text-white"
+                <a
+                  href="#"
+                  class="nav-link text-white d-flex align-items-center"
                   ><img
                     class="img-fluid"
                     src="./img/facebook_logo.png"
@@ -174,7 +185,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-white"
+                <a
+                  href="#"
+                  class="nav-link text-white d-flex align-items-center"
                   ><img
                     class="img-fluid"
                     src="./img/instagram_logo.png"
