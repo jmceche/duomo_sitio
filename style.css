@@ -22,8 +22,11 @@ footer {
 }
 
 /* INDEX */
-.carousel-item {
-  height: 95vh;
+
+.carousel img {
+  max-height: 95vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carousel-caption,
@@ -33,12 +36,33 @@ footer {
 
 .main-text {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 20%;
   padding: 1rem;
   width: 60%;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
+
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.main-text a {
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/*  PRODUCTOS */
+
+#productos-gallery .card-link {
+  color: inherit;
+}
+
+#productos-gallery .card-link .card-title {
+  transition: transform 0.5s ease;
+}
+
+#productos-gallery .card-link:hover .card-title {
+  /* font-size: 6rem; */
+  transform: scale(1.2);
 }
 
 #contacto {
@@ -99,4 +123,32 @@ i.fas,
 i.fa,
 i.far {
   color: teal;
+}
+/* MEDIA */
+
+@media (max-width: 768px) {
+  #contacto-main h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .fixed-top {
+    position: static;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  #navbar {
+    background-color: #111;
+  }
+
+  .main-text {
+    top: 10%;
+  }
+
+  .main-text a {
+    font-size: 2rem;
+  }
 }
