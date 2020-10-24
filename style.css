@@ -119,29 +119,56 @@ footer {
   text-shadow: 2px 2px 4px #000;
 }
 
+#nosotros-principal .container img {
+  width: 50%;
+}
+
 /* CONTACTO */
-#contacto-main {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+#contacto-header .jumbotron {
   background: url("./img/contacto2.jpg");
   background-size: cover;
   background-position: center;
+  height: 50vh;
+}
+
+#contacto-header .jumbotron h1 {
+  text-shadow: 2px 2px 4px #000;
+}
+
+#contacto-main {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  /* background: url("./img/contacto2.jpg");
+  background-size: cover;
+  background-position: center; */
 }
 
 #contacto-main hr {
   border-top: 2px solid #ccc;
 }
 
+#contacto-main h5.mail-wrap {
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: clip;
+}
+
+#contacto-main a {
+  color: inherit;
+  text-decoration: none;
+}
+
 iframe {
   display: block;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   margin: 0;
 }
 
 i.fas,
 i.fa,
-i.far {
+i.far,
+i.fab {
   color: teal;
 }
 /* MEDIA */
