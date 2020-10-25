@@ -100,7 +100,7 @@
     <!-- HERO -->
     <section id="carousel">
       <div class="container-fluid p-0">
-        <div class="row no-gutters">
+        <div class="row no-gutters position-relative">
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
@@ -200,7 +200,9 @@
 
           <div class="main-text">
             <div class="container text-center m-0">
-              <a href="/productos.html" class="text-light text-decoration-none"
+              <a
+                href="/productos.html"
+                class="text-center text-light text-decoration-none"
                 >Amoblamientos a Medida</a
               >
             </div>
@@ -267,28 +269,25 @@
     </section>
     <!--FOOTER-->
     <footer class="bg-dark">
-      <div class="container-fluid p-2">
-        <div class="row">
-          <div class="col">
-            <ul
-              class="nav flex-md-row align-items-center justify-content-center"
+      <div class="container-fluid py-3">
+        <div
+          id="links"
+          class="row row-cols-md-3 justify-content-center align-items-center"
+        >
+          <div class="col-md-2">
+            <a class="nav-link text-white text-center" href="/productos.html"
+              >Productos</a
             >
-              <li class="nav-item">
-                <a class="nav-link text-white" href="/productos.html"
-                  >Productos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="/nosotros.html"
-                  >Nosotros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="/contacto.html"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
+          </div>
+          <div class="col-md-2 border-left">
+            <a class="nav-link text-white text-center" href="/nosotros.html"
+              >Nosotros</a
+            >
+          </div>
+          <div class="col-md-2 border-left">
+            <a class="nav-link text-white text-center" href="/contacto.html"
+              >Contacto</a
+            >
           </div>
         </div>
         <div class="row justify-content-center py-3">
@@ -301,25 +300,26 @@
             />
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col d-flex flex-row justify-content-center">
+        <div class="row row-cols-2 justify-content-center">
+          <div class="col-1 d-flex flex-row justify-content-center">
             <a
               href="https://facebook.com/duomoamoblamientos"
               target="_blank"
-              class="nav-link d-flex align-items-center"
+              class="nav-link"
               ><img
-                class="img-fluid"
+                class="img"
                 src="/img/facebook_logo.png"
                 alt="facebook"
                 width="50"
             /></a>
-
+          </div>
+          <div class="col-1 d-flex flex-row justify-content-center">
             <a
               href="https://instagram.com/duomoamoblamientos"
               target="_blank"
               class="nav-link d-flex align-items-center"
               ><img
-                class="img-fluid"
+                class="img"
                 src="/img/instagram_logo.png"
                 alt="instagram"
                 width="50"
