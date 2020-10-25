@@ -31,6 +31,15 @@ footer {
   width: 100%;
 }
 
+footer li a.nav-link::before {
+  content: "|";
+  margin-right: 2rem;
+}
+
+footer li:first-child a.nav-link::before {
+  content: "";
+}
+
 /* INDEX */
 
 .carousel img {
@@ -73,7 +82,7 @@ footer {
 }
 
 #contacto {
-  background: url("./img/contacto2.jpg");
+  background: url("/img/contacto2.jpg");
   padding: 1rem;
   background-size: cover;
   background-position: center;
@@ -108,7 +117,7 @@ footer {
 
 /* NOSOTROS */
 #nosotros-header .jumbotron {
-  background: url("./img/nosotros.jpg");
+  background: url("/img/nosotros.jpg");
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -125,7 +134,7 @@ footer {
 
 /* CONTACTO */
 #contacto-header .jumbotron {
-  background: url("./img/contacto2.jpg");
+  background: url("/img/contacto2.jpg");
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -138,7 +147,7 @@ footer {
 #contacto-main {
   padding-top: 5rem;
   padding-bottom: 3rem;
-  /* background: url("./img/contacto2.jpg");
+  /* background: url("/img/contacto2.jpg");
   background-size: cover;
   background-position: center; */
 }
@@ -169,13 +178,17 @@ i.fas,
 i.fa,
 i.far,
 i.fab {
-  color: teal;
+  color: #0a0a0a;
 }
 /* MEDIA */
 
 @media (max-width: 768px) {
   #contacto-main h1 {
     font-size: 4rem;
+  }
+  #contacto-main .container-fluid {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
