@@ -124,8 +124,8 @@ footer {
   text-shadow: 2px 2px 4px #000;
 }
 
-#nosotros-principal .container img {
-  width: 50%;
+#nosotros-principal #valores.container img {
+  width: 30%;
 }
 
 /* CONTACTO */
@@ -155,9 +155,14 @@ footer {
   text-overflow: clip;
 }
 
-#contacto-main a {
-  color: inherit;
+#contacto-main a,
+footer div a {
+  color: #fff;
   text-decoration: none;
+}
+
+footer div a:hover {
+  color: #fff;
 }
 
 iframe {
@@ -180,7 +185,8 @@ i.fab {
     font-size: 4rem;
   }
   #contacto-main .container-fluid {
-    width: 75%;
+    /* width: 75%; */
+    width: 540px;
     margin: 0 auto;
   }
 }
