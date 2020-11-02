@@ -155,7 +155,10 @@ footer {
   text-overflow: clip;
 }
 
-#contacto-main a,
+#contacto-main a {
+    color: inherit;
+    text-decoration: none;
+}
 footer div a {
   color: #fff;
   text-decoration: none;
