@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 /* GENERAL */
 html {
   height: 100%;
@@ -17,6 +16,11 @@ nav.navbar.navbar-dark.transparent,
   background: rgba(0, 0, 0, 0.6) !important;
 }
 
+.heading {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .nav-link:hover {
   font-weight: 600;
 }
@@ -29,6 +33,9 @@ nav.navbar.navbar-dark.transparent,
 footer {
   flex-shrink: 0;
   width: 100%;
+}
+
+footer img {
 }
 
 .border-right {
@@ -62,6 +69,14 @@ footer {
 .main-text a {
   font-size: clamp(1rem, 5vw, 4rem);
   text-shadow: 2px 2px 4px #000;
+}
+
+#valores-index {
+  background: #fff;
+}
+
+#valores-index img {
+  width: 7rem;
 }
 
 /*  PRODUCTOS */
@@ -156,16 +171,18 @@ footer {
 }
 
 #contacto-main a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
-footer div a {
+footer a {
   color: #fff;
   text-decoration: none;
 }
 
 footer div a:hover {
   color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 iframe {
@@ -175,10 +192,11 @@ iframe {
   margin: 0;
 }
 
-i.fas,
-i.fa,
-i.far,
-i.fab {
+.icon-white {
+  color: #fff;
+}
+
+.icon-black {
   color: #0a0a0a;
 }
 /* MEDIA */
